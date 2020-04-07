@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import shortid from 'shortid';
 // eslint-disable-next-line
 import regeneratorRuntime from 'regenerator-runtime';
-import AddImg from './AddImg.js';
+import ItemImg from './ItemImg.js';
 
 export default function AppR() {
   const [listFiles, setListFiles] = useState([]);
@@ -47,7 +47,7 @@ export default function AppR() {
         </div>
       </div>
       <div className="block-img">
-        <AddImg files={listFiles} onRemove={handleRemove} />
+        <ItemImg files={listFiles} onRemove={handleRemove} />
       </div>
     </React.Fragment>
   );
